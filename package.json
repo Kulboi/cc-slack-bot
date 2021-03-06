@@ -4,7 +4,7 @@
   "description": "A simple chatbot",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js",
+    "start": "node index.js",
     "lint": "eslint 'src/**/*.js' --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
