@@ -1,10 +1,11 @@
-"use strict";
+const router = require("express").Router();
 
-import express from "express";
-
-const router = express.Router();
-
-// Base endpoint
 router.get("/", (req, res) => {
   res.send("Welcome to seren chatbot");
 });
+router.post("/", (req, res) => {
+  console.log(req.body);
+  res.json({ challenge: req.body.challenge });
+});
+
+module.exports = router;
